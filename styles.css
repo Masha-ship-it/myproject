@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f3ed;
+    color: #4f4f4f;
+}
+
+.header {
+    text-align: center;
+    padding: 2rem;
+    background-color: #e9dfe4;
+}
+
+.title {
+    font-size: 2.5rem;
+    margin: 0;
+    color: #b488a9;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #7c6b7d;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.flower {
+    text-align: center;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.flower:hover {
+    transform: scale(1.05);
+}
+
+.flower img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    position: relative; 
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.modal-content h2 {
+    margin: 0;
+    color: #b488a9;
+}
+
+.modal-content p {
+    color: #4f4f4f;
+}
+
+.close {
+    position: absolute; 
+    top: 10px; 
+    right: 10px; 
+    font-size: 1.5rem;
+    color: #7c6b7d; 
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close:hover {
+    color: #b488a9; 
+}
+

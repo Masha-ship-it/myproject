@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastel Flowers</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="title">Цветы и их описание</h1>
+        <p class="subtitle">Откройте для себя красоту этих прекрасных растений</p>
+    </header>
+    <main class="gallery">
+        <div class="flower" onclick="showDetails('Роза', 'Символ любви и страсти. Идеально подходит для романтических случаев.')">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/A_bright_yellow_rose.jpg/1920px-A_bright_yellow_rose.jpg" alt="Rose">
+            <h2>Роза</h2>
+        </div>
+        <div class="flower" onclick="showDetails('Лилия', 'Элегантный цветок, символизирующий чистоту и изящество.')">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/dd/Lilium_longiflorum_%28Easter_Lily%29.JPG" alt="Tulip">
+            <h2>Лилия</h2>
+        </div>
+        <div class="flower" onclick="showDetails('Ромашка', 'Простой и элегантный цветок, символизирующий чистоту и невинность.')">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Bellis_perennis_001.JPG/1280px-Bellis_perennis_001.JPG" alt="Daisy">
+            <h2>Ромашка</h2>
+        </div>
+        <div class="flower" onclick="showDetails('Гортензия', 'Известна своими крупными и яркими соцветиями в пастельных тонах.')">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Hydranchia.JPG/1280px-Hydranchia.JPG" alt="Hydrangea">
+            <h2>Гортензия</h2>
+        </div>
+    </main>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
